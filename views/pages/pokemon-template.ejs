@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/style.css">
+
+<% if (subpage === 'list') { %>
+    <h2>Pokémon by Region</h2>
+    <div class="region-list">
+      <a href="/pokemon/kanto" class="region-card">
+        <h3>Kanto Pokémon</h3>
+        <p><%= pokemon.kanto.length %> Pokémon</p>
+      </a>
+      <a href="/pokemon/johto" class="region-card">
+        <h3>Johto Pokémon</h3>
+        <p><%= pokemon.johto.length %> Pokémon</p>
+      </a>
+    </div>
+  <% } else { %>
+    <h2><%= title %></h2>
+    <div class="pokemon-list">
+      <% pokemon.forEach(p => { %>
+        <%- include('../partials/pokemon-card', {pokemon: p}) %>
+      <% }) %>
+    </div>
+    <a href="/pokemon" class="button">Back to All Pokémon</a>
+  <% } %>
