@@ -1,4 +1,7 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 <link rel="stylesheet" href="/css/style.css">
+<%- include('../partials/header') %>
 
 <% if (subpage === 'list') { %>
     <h2>Pokémon Regions</h2>
@@ -37,3 +40,4 @@
     </div>
     <a href="/regions" class="button">Back to All Regions</a>
   <% } %>
+  <%- include('../partials/footer') %>

@@ -1,5 +1,7 @@
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   html, body {
@@ -18,6 +20,12 @@ body {
     
   }
 
+  .page-wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 100px;
+}
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +35,7 @@ body {
   }
   
   header {
-    background-color: #ff0000;
+    background-color: #c43838;
     color: white;
     padding: 10px 0;
   }
@@ -65,11 +73,16 @@ body {
   }
   
   footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #c43838;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
   
   .hero {
     text-align: center;
@@ -136,7 +149,7 @@ body {
   
   .button {
     display: inline-block;
-    background-color: #ff0000;
+    background-color: #e03f3f;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -147,3 +160,4 @@ body {
   .button:hover {
     background-color: #cc0000;
   }
+  
